@@ -5,6 +5,9 @@ const DisplayHome = () => {
   return (
     <>
       <Navbar />
+      <div>
+        
+      </div>
     </>
   );
 };
