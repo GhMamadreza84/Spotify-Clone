@@ -19,7 +19,7 @@ const DisplayHome = () => {
             />
           ))}
         </div>
-        <h1 className="my-5 text-2xl font-bold">Today's song hits</h1>
+        <h1 className="my-5 text-2xl font-bold">Today's biggest hits</h1>
         <div className="flex overflow-auto ">
           {songsData.map((item, index) => (
             <AlbumItem
