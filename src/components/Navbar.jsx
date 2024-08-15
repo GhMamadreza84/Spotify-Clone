@@ -1,17 +1,22 @@
 import React from "react";
 import { assets } from "../assets/assets";
 
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="flex items-center justify-between w-full font-semibold">
         <div className="flex items-center gap-2">
           <img
+            onClick={() => navigate(-1)}
             className="w-8 p-2 bg-black cursor-pointer rounded-2xl"
             src={assets.arrow_left}
             alt="arrow-left"
           />
           <img
+            onClick={() => navigate(1)}
             className="w-8 p-2 bg-black cursor-pointer rounded-2xl"
             src={assets.arrow_right}
             alt="arrow-right"
