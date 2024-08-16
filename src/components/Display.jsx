@@ -6,7 +6,8 @@ import DisplayAlbum from "./DisplayAlbum";
 const Display = () => {
   const displayRef = useRef();
   const location = useLocation();
-  console.log(location);
+  const isAlbum = location.pathname.includes("album");
+  console.log(isAlbum)
   return (
     <div
       ref={displayRef}
