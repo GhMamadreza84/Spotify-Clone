@@ -22,8 +22,8 @@ const DisplayAlbum = () => {
             {albumData.name}
           </h2>
           <h4>{albumData.desc}</h4>
-          <p className="mt-1">
-            <img src={assets.spotify_logo} alt="spotify_logo" />
+          <p className="flex items-center gap-2 mt-1">
+            <img className="w-5 h-5" src={assets.spotify_logo} alt="spotify_logo" />
             <b>Spotify</b> &#x2022; 1,332,365 &#x2022; <b> 50 songs, </b>
             about 2 hr 30 min
           </p>

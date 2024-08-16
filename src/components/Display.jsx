@@ -3,11 +3,10 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import DisplayHome from "./DisplayHome";
 import DisplayAlbum from "./DisplayAlbum";
 
-const displayRef = useRef();
-const location = useLocation();
-console.log(location)
-
 const Display = () => {
+  const displayRef = useRef();
+  const location = useLocation();
+  console.log(location);
   return (
     <div
       ref={displayRef}
