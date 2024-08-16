@@ -1,9 +1,13 @@
-import { createContext } from "react";
+import { createContext, useRef } from "react";
 
 export const PlayerContext = createContext();
 
 const PlayerContextProvider = (props) => {
-  const contextValue = {};
+  const audioRef = useRef();
+
+  const contextValue = {
+    audioRef,
+  };
 
   return (
     <PlayerContext.Provider value={contextValue}>
