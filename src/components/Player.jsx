@@ -3,7 +3,7 @@ import { assets, songsData } from "../assets/assets";
 import { PlayerContext } from "../context/PlayerContext";
 
 const Player = () => {
-  const { seekBg, seekBar, playStatus, play, pause } =
+  const { track, seekBg, seekBar, playStatus, play, pause } =
     useContext(PlayerContext);
 
   return (
@@ -12,14 +12,10 @@ const Player = () => {
     "
     >
       <div className="items-center hidden gap-4 lg:flex">
-        <img
-          src={songsData[0].image}
-          alt={songsData[0].name}
-          className="w-12"
-        />
+        <img src={track.image} alt={track.name} className="w-12" />
         <div>
-          <p>{songsData[0].name}</p>
-          <p>{songsData[0].desc.slice(0, 12)}</p>
+          <p>{track.name}</p>
+          <p>{track.desc.slice(0, 12)}</p>
         </div>
       </div>
       <div className="flex flex-col items-center gap-1 m-auto">
