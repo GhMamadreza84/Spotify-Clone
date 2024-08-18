@@ -19,7 +19,6 @@ const Display = () => {
     }
   });
 
-  console.log(albumId);
   return (
     <div
       ref={displayRef}

@@ -3,7 +3,8 @@ import { assets, songsData } from "../assets/assets";
 import { PlayerContext } from "../context/PlayerContext";
 
 const Player = () => {
-  const { seekBg, seekBar } = useContext(PlayerContext);
+  const { seekBg, seekBar, playStatus, play, pause } =
+    useContext(PlayerContext);
 
   return (
     <div
@@ -29,7 +30,18 @@ const Player = () => {
             className="w-4 cursor-pointer"
           />
           <img src={assets.prev_icon} alt="" className="w-4 cursor-pointer" />
-          <img src={assets.plays_icon} alt="" className="w-4 cursor-pointer" />
+          <img
+            onClick={play}
+            src={assets.play_icon}
+            alt=""
+            className="w-4 cursor-pointer"
+          />
+          <img
+            onClick={pause}
+            src={assets.pause_icon}
+            alt=""
+            className="w-4 cursor-pointer"
+          />
           <img src={assets.next_icon} alt="" className="w-4 cursor-pointer" />
           <img src={assets.loop_icon} alt="" className="w-4 cursor-pointer" />
         </div>
