@@ -5,7 +5,7 @@ import { PlayerContext } from "../context/PlayerContext";
 const Player = () => {
   const { track, seekBg, seekBar, playStatus, play, pause, time } =
     useContext(PlayerContext);
-
+console.log(time.totalTime.second)
   return (
     <div
       className="h-[10%] bg-black flex justify-between items-center text-white px-4
@@ -58,7 +58,7 @@ const Player = () => {
             />
           </div>
           <p>
-            {time.currentTime.minute}:{time.currentTime.second}
+            {time.totalTime.minute}:{time.totalTime.second}
           </p>
         </div>
       </div>
