@@ -30,18 +30,21 @@ const Player = () => {
             className="w-4 cursor-pointer"
           />
           <img src={assets.prev_icon} alt="" className="w-4 cursor-pointer" />
-          <img
-            onClick={play}
-            src={assets.play_icon}
-            alt=""
-            className="w-4 cursor-pointer"
-          />
-          <img
-            onClick={pause}
-            src={assets.pause_icon}
-            alt=""
-            className="w-4 cursor-pointer"
-          />
+          {playStatus ? (
+            <img
+              onClick={pause}
+              src={assets.pause_icon}
+              alt=""
+              className="w-4 cursor-pointer"
+            />
+          ) : (
+            <img
+              onClick={play}
+              src={assets.play_icon}
+              alt=""
+              className="w-4 cursor-pointer"
+            />
+          )}
           <img src={assets.next_icon} alt="" className="w-4 cursor-pointer" />
           <img src={assets.loop_icon} alt="" className="w-4 cursor-pointer" />
         </div>
