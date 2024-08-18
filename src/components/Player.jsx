@@ -3,7 +3,7 @@ import { assets, songsData } from "../assets/assets";
 import { PlayerContext } from "../context/PlayerContext";
 
 const Player = () => {
-  const { track, seekBg, seekBar, playStatus, play, pause } =
+  const { track, seekBg, seekBar, playStatus, play, pause, time } =
     useContext(PlayerContext);
 
   return (
@@ -45,7 +45,9 @@ const Player = () => {
           <img src={assets.loop_icon} alt="" className="w-4 cursor-pointer" />
         </div>
         <div className="flex items-center gap-5">
-          <p>1:06</p>
+          <p>
+            {time.currentTime.minute}:{time.currentTime.second}
+          </p>
           <div
             ref={seekBg}
             className="w-[60vw] max-w-[500px] bg-gray-300 rounded-full cursor-pointer"
@@ -55,7 +57,9 @@ const Player = () => {
               className="w-0 h-1 bg-green-800 border-none rounded full"
             />
           </div>
-          <p>3:20</p>
+          <p>
+            {time.currentTime.minute}:{time.currentTime.second}
+          </p>
         </div>
       </div>
       <div className="items-center hidden gap-2 opacity-75 lg:flex">

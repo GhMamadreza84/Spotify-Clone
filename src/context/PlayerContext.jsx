@@ -1,4 +1,4 @@
-import { createContext, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import { songsData } from "../assets/assets";
 
 export const PlayerContext = createContext();
@@ -30,6 +30,8 @@ const PlayerContextProvider = (props) => {
     audioRef.current.pause();
     setPlayStatus(false);
   };
+
+  
 
   const contextValue = {
     audioRef,
