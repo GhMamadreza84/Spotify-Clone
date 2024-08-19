@@ -31,10 +31,10 @@ const PlayerContextProvider = (props) => {
     setPlayStatus(false);
   };
 
-  
-
-
-
+  const playWithId = async (id) => {
+    await setTrack(songsData[id]);
+    await audioRef.current.play();
+  };
 
   useEffect(() => {
     setTimeout(() => {
