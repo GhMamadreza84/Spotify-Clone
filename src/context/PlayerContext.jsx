@@ -69,6 +69,7 @@ const PlayerContextProvider = (props) => {
     setTime,
     play,
     pause,
+    playWithId
   };
 
   return (
