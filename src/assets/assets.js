@@ -81,14 +81,14 @@ export const albumsData = [
   },
   {
     id: 1,
-    name: "Top 50 India",
+    name: "Top 50 Iran",
     image: img9,
     desc: "Your weekly update of the most played tracks",
     bgColor: "#22543d",
   },
   {
     id: 2,
-    name: "Trending India",
+    name: "Trending Iran",
     image: img10,
     desc: "Your weekly update of the most played tracks",
     bgColor: "#742a2a",
