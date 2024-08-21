@@ -1,10 +1,7 @@
 <h1> Spotify-Clone <h1>
 
   
-<span style="font-size: 18px; color: gray;">
 As part of learning to code, I completed a project that involved creating a basic Spotify clone using React Tailwind CSS. This project is designed to demonstrate my skills in front-end web development. It is a responsive and user-friendly web application that allows users to play music. I used Tailwind for interface design and styling and implemented React for management. User input and interaction like initial playback controls - play, pause and next etc... I also gained experience working with version control tools like Git and GitHub.
-
-</span>
 
 <h2>Tech Stack</h2>
 <span>
