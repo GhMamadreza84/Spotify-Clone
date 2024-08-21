@@ -10,3 +10,13 @@ As part of learning to code, I completed a project that involved creating a basi
 <img alt="react" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" /> 
 <img alt="TailwindCSS" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" /> 
 </span>
+
+  <span style="font-size: 15px;"> 
+  
+Usage-
+Once the Spotify clone is open in your browser, You can then click the play button next to the song to start playing it, and use the playback controls at the bottom of the page to control the song playback.The currently playing song and album artwork are displayed in the "Now Playing" section at the bottom of the page.
+
+ </span>
+
+ <h2>Live Demo :</h2>
+<a href="">Demo Link</a>
