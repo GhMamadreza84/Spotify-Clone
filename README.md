@@ -20,3 +20,7 @@ Once the Spotify clone is open in your browser, You can then click the play butt
 
  <h2>Live Demo :</h2>
 <a href="https://spotify-clone-ghmamadreza.vercel.app/">Demo Link</a>
+
+
+<h2>Screenshot :</h2>
+<img src="https://fibiland.com/wp-content/uploads/2024/08/spotify-mocup-scaled.webp" alt="spotify-cover" />
